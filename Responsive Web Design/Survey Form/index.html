@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container text-center">
+      <header>
+        <h1 id="title">Arjun's School Survey Form</h1>
+        <p id="description" class="description text-center">A survey to find out the study patterns of students in our school</p>
+      </header>
+      <form id="survey-form">
+        <label id="name-label" for="name">Name
+          <input id="name" type="text" required placeholder="Enter Your Full Name" />
+        </label>
+        <label id="email-label" for="email">Email
+          <input id="email" type="email" required placeholder="Enter Your Email Address" />
+        </label>
+        <label id="number-label" for="number">Grade
+          <input id="number" type="number" min="8" max="12" placeholder="Enter Your Grade" />
+        </label>
+        <label id="dropdown-label" for="dropdown">Classroom
+          <select id="dropdown">
+            <option>Select a Class</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+          </select>
+        </label>
+        <label>How many hours do you study at home per day? <p class="details inline">(All Subjects Combined)</p>
+          <br>
+          <input class="inline" type="radio" name="hours-studying" value="<1hr" /> Less Than 1 Hour
+          <br>
+          <input class="inline" type="radio" name="hours-studying" value="=1hr" /> 1 Hour
+          <br>
+          <input class="inline" type="radio" name="hours-studying" value="<2hr" /> Between 1 and 2 Hours
+          <br>
+          <input class="inline" type="radio" name="hours-studying" value=">2hr" /> More Than 2 Hours
+        </label>
+        <label>What are your optional subjects? <p class="details inline">(Select 4)</p>
+          <br>
+          <input class="inline" type="checkbox" name="subject" value="physics" /> Physics
+          <br>
+          <input class="inline" type="checkbox" name="subject" value="chemistry" /> Chemistry
+          <br>
+          <input class="inline" type="checkbox" name="subject" value="biology" /> Biology
+          <br>
+          <input class="inline" type="checkbox" name="subject" value="computer-science" /> Computer Science
+          <br>
+          <input class="inline" type="checkbox" name="subject" value="economics" /> Economics
+          <br>
+          <input class="inline" type="checkbox" name="subject" value="psychology" /> Psychology
+          <br>
+          <input class="inline" type="checkbox" name="subject" value="business-management" /> Business Management
+        </label>
+        <label>Any Additional Comments or Suggestions?
+          <textarea placeholder="Enter Your Comments Here"></textarea>
+        </label>
+        <button id="submit" class="submit-button" type="submit">Submit Form</button>
+      </form>
+    </div>
+  </body>
+</html>
